@@ -1,7 +1,7 @@
 @extends('_layouts.main')
 
 @section('body')
-<div class="h-screen p-8 bg-cover"
+<section class="h-screen p-8 bg-cover"
     style="background-image: linear-gradient(rgba(227, 114, 38, 0.75),rgba(227, 114, 38, 0.75)), url('/assets/images/hero.jpg') ;">
     <div class="h-full max-w-5xl mx-auto flex flex-col justify-center items-center">
 
@@ -11,5 +11,5 @@
             </div>
         </h1>
     </div>
-</div>
+</section>
 @endsection
