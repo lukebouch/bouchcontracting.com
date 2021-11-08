@@ -10,6 +10,11 @@ module.exports = {
                 "4xl": "4.209rem",
                 "5xl": "5.610rem",
             },
+            colors: {
+                orange: {
+                    DEFAULT: "#e36f25",
+                },
+            },
         },
     },
     variants: {

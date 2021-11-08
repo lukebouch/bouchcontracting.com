@@ -6,7 +6,9 @@ html {
     font-size: 100%;
 }
 
-/*16px*/
+[x-cloak] {
+    display: none !important;
+}
 
 body {
     background: white;
@@ -55,4 +57,8 @@ h5 {
 small,
 .text_small {
     font-size: 0.75rem;
+}
+
+.container {
+    @apply max-w-6xl mx-auto px-5;
 }
