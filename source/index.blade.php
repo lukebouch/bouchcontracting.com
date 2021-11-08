@@ -12,11 +12,11 @@
         </h1>
     </div>
 </section>
-<section class="container pt-10">
+<section class="container py-5 md:pt-10 md:pb-0">
     <div class="grid md:grid-cols-2 gap-8 mt-8">
-        <div>
+        <div class="-mb-14">
             <x-lightbox-image src="assets/images/kitchen-remodel-after-01.jpg" alt="After the kitchen was remodeled" />
-            <x-lightbox-image class="relative w-60 bottom-14 right-10 shadow-lg"
+            <x-lightbox-image class="relative mx-auto w-60 bottom-14 shadow-2xl md:shadow-lg md:ml-0 md:right-10"
                 src="assets/images/kitchen-remodel-after-02.jpg" alt="After the kitchen was remodeled" />
         </div>
         <div>
@@ -24,7 +24,7 @@
             <p>The kitchen is one of the areas that can effect the re-sell value of your home the most. We love to see
                 how happy our customers are after allowing us to dramatically transform their kitchen and increasing the
                 usability and value of their home.</p>
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid md:grid-cols-3 gap-4">
                 <x-lightbox-image src="assets/images/kitchen-remodel-before-01.jpg"
                     alt="Before the kitchen was remodeled" />
                 <x-lightbox-image src="assets/images/kitchen-remodel-before-02.jpg"
@@ -35,7 +35,7 @@
         </div>
     </div>
 </section>
-<section class="container pb-10">
+<section class="container py-5 md:mb-10 md:mt-0">
     <div class="grid md:grid-cols-2 gap-8 mt-8">
         <div>
             <h3>Additions</h3>
