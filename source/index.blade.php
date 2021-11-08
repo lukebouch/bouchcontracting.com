@@ -12,11 +12,11 @@
         </h1>
     </div>
 </section>
-<section class="container py-10">
+<section class="container pt-10">
     <div class="grid md:grid-cols-2 gap-8 mt-8">
         <div>
             <x-lightbox-image src="assets/images/kitchen-remodel-after-01.jpg" alt="After the kitchen was remodeled" />
-            <x-lightbox-image class="relative w-60 -top-14 right-10 shadow-lg"
+            <x-lightbox-image class="relative w-60 bottom-14 right-10 shadow-lg"
                 src="assets/images/kitchen-remodel-after-02.jpg" alt="After the kitchen was remodeled" />
         </div>
         <div>
@@ -32,6 +32,22 @@
                 <x-lightbox-image src="assets/images/kitchen-remodel-before-03.jpg"
                     alt="Before the kitchen was remodeled" />
             </div>
+        </div>
+    </div>
+</section>
+<section class="container pb-10">
+    <div class="grid md:grid-cols-2 gap-8 mt-8">
+        <div>
+            <h3>Additions</h3>
+            <p>Adding an addition to your home is a great way to get more space without the expense and hassle of
+                moving.</p>
+            <div class="grid grid-cols-2 gap-4">
+                <x-lightbox-image src="assets/images/home-addition-during-03.jpg" alt="During the addition" />
+                <x-lightbox-image src="assets/images/home-addition-during-04.jpg" alt="During the addition" />
+            </div>
+        </div>
+        <div>
+            <x-lightbox-image src="assets/images/home-addition-during-01.jpg" alt="During the addition" />
         </div>
     </div>
 </section>
