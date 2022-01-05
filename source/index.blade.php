@@ -12,7 +12,7 @@
         </h1>
     </div>
 </section>
-<section class="container py-5 md:pt-10 md:pb-0">
+<section class="container py-5 md:pt-10">
     <div class="grid md:grid-cols-2 gap-8 mt-8">
         <div class="-mb-14">
             <x-lightbox-image src="assets/images/kitchen-remodel-after-01.jpg" alt="After the kitchen was remodeled" />
@@ -33,6 +33,13 @@
                     alt="Before the kitchen was remodeled" />
             </div>
         </div>
+    </div>
+</section>
+<section class="py-5 md:pt-10 mt-10 bg-orange text-center text-white">
+    <div class="container grid">
+        <h3>Thomas Bouch</h3>
+        <a href="tel:4349222500">(434) 922-2500</a>
+        <a href="mailto:tom@bouchcontracting.com">tom@bouchcontracting.com</a>
     </div>
 </section>
 @endsection
