@@ -62,3 +62,11 @@ small,
 .container {
     @apply max-w-6xl mx-auto px-5;
 }
+
+.btn {
+    @apply inline-block py-3 px-2 font-semibold uppercase bg-orange text-white;
+}
+
+.btn-white {
+    @apply inline-block py-2 px-3 font-semibold uppercase bg-white text-black;
+}

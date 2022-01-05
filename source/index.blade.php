@@ -51,4 +51,14 @@
         </div>
     </div>
 </section>
+<section class="py-10 text-center bg-orange text-white">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p class="max-w-2xl mx-auto">If we have conviced you that we are the best contractor in town and you are ready
+            for our
+            help on your next
+            project, schedule a call where we can discuss how we are able to help.</p>
+        <a class="btn-white" href="">Schedule a Call</a>
+    </div>
+</section>
 @endsection
