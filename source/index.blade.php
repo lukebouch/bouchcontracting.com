@@ -35,30 +35,4 @@
         </div>
     </div>
 </section>
-<section class="container py-5 md:mb-10 md:mt-0">
-    <div class="grid md:grid-cols-2 gap-8 mt-8">
-        <div>
-            <h3>Additions</h3>
-            <p>Adding an addition to your home is a great way to get more space without the expense and hassle of
-                moving.</p>
-            <div class="grid grid-cols-2 gap-4">
-                <x-lightbox-image src="assets/images/home-addition-during-03.jpg" alt="During the addition" />
-                <x-lightbox-image src="assets/images/home-addition-during-04.jpg" alt="During the addition" />
-            </div>
-        </div>
-        <div>
-            <x-lightbox-image src="assets/images/home-addition-during-01.jpg" alt="During the addition" />
-        </div>
-    </div>
-</section>
-<section class="py-10 text-center bg-orange text-white">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p class="max-w-2xl mx-auto">If we have conviced you that we are the best contractor in town and you are ready
-            for our
-            help on your next
-            project, schedule a call where we can discuss how we are able to help.</p>
-        <a class="btn-white" href="">Schedule a Call</a>
-    </div>
-</section>
 @endsection
