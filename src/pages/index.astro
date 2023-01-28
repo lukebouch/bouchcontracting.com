@@ -1,81 +1,81 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Testimony from "../components/Testimony.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+    <main>
+        <section>
+            <div class="relative bg-white h-screen">
+                <div
+                    class="mx-auto items-center h-full max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8"
+                >
+                    <div
+                        class="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-48 lg:pb-56 xl:col-span-6"
+                    >
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <img
+                                class="h-32"
+                                src="/logo-orange.png"
+                                alt="Your Company"
+                            />
+                            <h1
+                                class="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl"
+                            >
+                                The contractor you can actually trust.
+                            </h1>
+                            <p class="mt-6 text-lg leading-8 text-gray-600">
+                                Anim aute id magna aliqua ad ad non deserunt
+                                sunt. Qui irure qui lorem cupidatat commodo.
+                                Elit sunt amet fugiat veniam occaecat fugiat
+                                aliqua.
+                            </p>
+                            <div class="mt-10 flex items-center gap-x-6">
+                                <a
+                                    href="#"
+                                    class="rounded-md bg-orange-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+                                    >Call now</a
+                                >
+                                <a
+                                    href="#"
+                                    class="text-base font-semibold leading-7 text-gray-900"
+                                    >Read our story<span
+                                        aria-hidden="true"
+                                        class="ml-2">→</span
+                                    ></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0"
+                    >
+                        <div
+                            class="relative aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+                        >
+                            <div
+                                class="absolute inset-0 z-10 bg-orange bg-opacity-60"
+                            >
+                            </div>
+                            <img
+                                class="absolute inset-0 object-cover h-full w-full"
+                                src="/hero.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+        <section class="overflow-hidden bg-gray-50 py-12 md:py-20 lg:py-24">
+            <Testimony name="John Doe">
+                I recently hired Bouch Contracting for a kitchen renovation and
+                was very pleased with the results. The team was professional,
+                reliable and exceeded my expectations. The new kitchen is now
+                functional and beautiful. I highly recommend Bouch Contracting
+                for any kitchen renovation needs.
+            </Testimony>
+        </section>
+    </main>
+</Layout>
