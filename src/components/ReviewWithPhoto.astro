@@ -1,0 +1,28 @@
+---
+const { name, img, title } = Astro.props;
+---
+
+<section>
+    <div class="h-screen relative">
+        <div
+            class="absolute z-10 inset-0 h-full w-full flex flex-col justify-center"
+        >
+            <div class="grid grid-cols-2 p-10">
+                <div class="bg-white p-5 shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-3">{title}</h3>
+                    <figure>
+                        <blockquote class="mb-2">
+                            <slot />
+                        </blockquote>
+                        <figcaption>
+                            <span class="font-semibold text-gray-800"
+                                >{name}</span
+                            >
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <img class="absolute inset-0 h-full w-full object-cover" src={img} />
+    </div>
+</section>
