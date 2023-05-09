@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 
-    <script src="https://whole-pens.bouchcontracting.com/script.js" data-site="EGHXRYDK" defer></script>
+    <script src="https://cdn.usefathom.com/script.js" data-site="EGHXRYDK" defer></script>
 </head>
 
 <body class="text-gray-900 font-sans">
