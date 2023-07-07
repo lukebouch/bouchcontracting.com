@@ -14,7 +14,7 @@
                 <button
                     type="button"
                     class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
-                    @click="open = true"
+                    @click="openNav()"
                 >
                     <span class="sr-only">Open main menu</span>
                     <svg
@@ -48,15 +48,9 @@
             </div>
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
-        <div
-            class="lg:hidden"
-            role="dialog"
-            aria-modal="true"
-            x-show="open"
-            x-cloak
-        >
+        <div class="lg:hidden" role="dialog" aria-modal="true" v-show="open">
             <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-50" x-show="open" x-cloak></div>
+            <div class="fixed inset-0 z-50" v-show="open"></div>
             <div
                 class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10"
             >
@@ -72,7 +66,7 @@
                     <button
                         type="button"
                         class="-m-2.5 rounded-md p-2.5 text-gray-100"
-                        @click="open = false"
+                        @click="closeNav()"
                     >
                         <span class="sr-only">Close menu</span>
                         <svg
@@ -120,6 +114,7 @@ export default {
     props: ["transparent"],
     data() {
         return {
+            open: false,
             links: [
                 {
                     label: "Home",
@@ -135,6 +130,14 @@ export default {
                 },
             ],
         };
+    },
+    methods: {
+        openNav() {
+            this.open = true;
+        },
+        closeNav() {
+            this.open = false;
+        },
     },
 };
 </script>
