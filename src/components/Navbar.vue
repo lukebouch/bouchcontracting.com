@@ -34,15 +34,12 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#" class="text-sm font-semibold leading-6 text-white"
-                    >Home</a
-                >
-                <a href="#" class="text-sm font-semibold leading-6 text-white"
-                    >Our Work</a
-                >
-                <a href="#" class="text-sm font-semibold leading-6 text-white"
-                    >Meet the Team</a
-                >
+                <a
+                    class="text-sm font-semibold leading-6 text-white"
+                    v-for="link in links"
+                    v-text="link.label"
+                    :href="link.href"
+                ></a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <div class="text-sm font-semibold leading-6 text-white">
@@ -98,20 +95,11 @@
                     <div class="-my-6 divide-y divide-gray-500/25">
                         <div class="space-y-2 py-6">
                             <a
-                                href="#"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-                                >Home</a
-                            >
-                            <a
-                                href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-                                >Our Work</a
-                            >
-                            <a
-                                href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-                                >Meet the Team</a
-                            >
+                                v-for="link in links"
+                                v-text="link.label"
+                                :href="link.href"
+                            ></a>
                         </div>
                         <div class="py-6">
                             <a
@@ -130,5 +118,23 @@
 <script>
 export default {
     props: ["transparent"],
+    data() {
+        return {
+            links: [
+                {
+                    label: "Home",
+                    href: "/",
+                },
+                {
+                    label: "Our Work",
+                    href: "/our-work",
+                },
+                {
+                    label: "Meet the Team",
+                    href: "/meet-the-team",
+                },
+            ],
+        };
+    },
 };
 </script>
