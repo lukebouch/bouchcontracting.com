@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Person from "../components/Person.vue";
+import team from "../data/team";
+---
+
+<Layout title="Meet the Team" navbar>
+    <div class="container py-12 mt-5 md:py-24 px-6 text-center">
+        <h1 class="text-5xl text-bold mb-5">Meet the Team</h1>
+        <p class="text-color-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit
+            amet tincidunt ante. Maecenas scelerisque nibh quis luctus
+            vestibulum. Sed ut tellus lacinia, efficitur nisl a.
+        </p>
+    </div>
+
+    <section class="container px-6">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-24"
+        >
+            {
+                team.map(function (member) {
+                    return <Person person={member} />;
+                })
+            }
+        </div>
+    </section>
+</Layout>
