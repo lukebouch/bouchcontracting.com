@@ -39,9 +39,9 @@ export default [
         name: "Nathan Hollifield",
         title: "",
         images: {
-            small: "https://static.bouchcontracting.com/team/nathan-holliefield-sm.jpg",
-            medium: "https://static.bouchcontracting.com/team/nathan-holliefield-md.jpg",
-            large: "https://static.bouchcontracting.com/team/nathan-holliefield-lg.jpg",
+            small: "https://static.bouchcontracting.com/team/nathan-hollifield-sm.jpg",
+            medium: "https://static.bouchcontracting.com/team/nathan-hollifield-md.jpg",
+            large: "https://static.bouchcontracting.com/team/nathan-hollifield-lg.jpg",
         },
     },
     {
