@@ -1,7 +1,7 @@
 <template>
     <header class="relative z-50" :class="{ 'bg-orange': !transparent }">
         <nav
-            class="flex items-center justify-between h-24 lg:px-8"
+            class="flex items-center justify-between h-24 px-6 lg:px-8"
             aria-label="Global"
         >
             <div class="flex lg:flex-1">
