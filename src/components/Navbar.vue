@@ -5,7 +5,7 @@
             aria-label="Global"
         >
             <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
+                <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">Bouch Contracting</span>
                     <img class="h-16 w-auto" src="/logo-white.png" alt="" />
                 </a>
@@ -38,7 +38,7 @@
                     class="text-sm font-semibold leading-6 text-white"
                     v-for="link in links"
                     v-text="link.label"
-                    :href="link.href"
+                    v-bind:href="link.href"
                 ></a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -55,7 +55,7 @@
                 class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10"
             >
                 <div class="flex items-center justify-between">
-                    <a href="#" class="-m-1.5 p-1.5">
+                    <a href="/" class="-m-1.5 p-1.5">
                         <span class="sr-only">Bouch Contracting</span>
                         <img
                             class="h-14 w-auto"
@@ -92,7 +92,7 @@
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                                 v-for="link in links"
                                 v-text="link.label"
-                                :href="link.href"
+                                v-bind:href="link.href"
                             ></a>
                         </div>
                         <div class="py-6">
