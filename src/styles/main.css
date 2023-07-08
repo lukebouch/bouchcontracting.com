@@ -1,0 +1,9 @@
+[x-cloak] {
+    display: none !important;
+}
+
+@layer component {
+    .container {
+        @apply max-w-5xl mx-auto;
+    }
+}
