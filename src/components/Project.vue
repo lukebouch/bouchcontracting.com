@@ -1,12 +1,12 @@
 <template>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14">
         <img
-            class="rounded-xl shadow-md"
+            class="hidden md:visible rounded-xl shadow-md"
             :src="project.images[0].src"
             :alt="project.images[0].src"
         />
         <div>
-            <div class="mb-8">
+            <div class="mb-6 md:mb-8">
                 <h2 class="text-4xl font-semibold" v-text="project.title"></h2>
                 <p
                     class="mt-3"
@@ -15,7 +15,12 @@
                 ></p>
             </div>
 
-            <div class="grid grid-cols-2 gap-10">
+            <div class="grid grid-cols-2 gap-6 md:gap-10">
+                <img
+                    class="md:hidden rounded-xl shadow-md"
+                    :src="project.images[0].src"
+                    :alt="project.images[0].src"
+                />
                 <img
                     class="rounded-xl shadow-md"
                     :src="image.src"
