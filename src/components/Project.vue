@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14">
         <img
-            class="hidden md:visible rounded-xl shadow-md"
+            class="invisible md:visible rounded-xl shadow-md"
             :src="project.images[0].src"
             :alt="project.images[0].src"
         />
