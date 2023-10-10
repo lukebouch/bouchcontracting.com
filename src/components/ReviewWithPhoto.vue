@@ -1,6 +1,6 @@
 <template>
     <div class="h-screen">
-        <div class="h-full relative my-32 mx-40">
+        <div class="h-full relative mx-40">
             <div
                 class="absolute z-10 inset-0 h-full w-full flex flex-col justify-center"
             >
