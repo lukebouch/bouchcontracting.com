@@ -4,14 +4,14 @@
             <div
                 class="absolute z-10 inset-0 h-full w-full flex flex-col justify-center"
             >
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-10">
+                <div class="p-10 w-full">
                     <div
                         :class="[
-                            'bg-white p-5',
+                            'bg-white p-14',
                             'shadow-lg',
-                            'max-w-2xl',
-                            'mx-auto',
-                            { 'lg:col-start-2': flip },
+                            'max-w-4xl',
+                            { 'ml-48 mr-auto': !flip },
+                            { 'mr-48 ml-auto': flip },
                         ]"
                     >
                         <h3 class="text-4xl font-semibold mb-5">{{ title }}</h3>
