@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import TeamMemberCard from "../components/TeamMemberCard.astro";
 import team from "../data/team.js";
+
+import teamImage from "../assets/images/team.jpg";
 ---
 
 <section class="mt-24">
@@ -22,4 +25,9 @@ import team from "../data/team.js";
             }
         </div>
     </div>
+    <Image
+        src={teamImage}
+        alt="Photo of some of the team"
+        class="mt-10 lg:max-h-[80vh] object-cover object-[center_30%]"
+    />
 </section>
