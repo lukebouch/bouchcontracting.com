@@ -3,4 +3,4 @@ command = "npm run build"
 publish = "dist"
 
 [build.environment]
-NODE_VERSION = "21.6.0"
+NODE_VERSION = "v20"
