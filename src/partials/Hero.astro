@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets";
+
+import backgroundHexigonsImage01 from "../assets/background-hexigons-01.svg";
+import tomBouchImage01 from "../assets/images/people/tom-bouch-01.jpg";
+import nathanHolliefieldImage01 from "../assets/images/people/nathan-holliefield-01.jpg";
+import carterMacdonaldImage01 from "../assets/images/people/carter-macdonald-01.jpg";
+import mikeTempleImage01 from "../assets/images/people/mike-temple-01.jpg";
+import wadeHooverImage01 from "../assets/images/people/wade-hoover-01.jpg";
+---
+
+<section class="relative">
+        <div class="container-section py-12 w-full flex gap-20">
+            <div class="w-3/5 flex-0 py-60">
+                <h1 class="h1">
+                    Your Trusted Partner for<br />
+                     Home Improvement and Remodeling
+                </h1>
+                <p
+                    class="mt-6 text-gray-600 text-2xl max-w-prose leading-[1.7]"
+                >
+                    We are dedicated to turning your home improvement dreams
+                    into reality. With a passionate team of skilled
+                    professionals, we take pride in delivering top-notch
+                    remodeling and renovation services that enhance the beauty,
+                    functionality, and value of your home.
+                </p>
+                <div class="mt-6">
+                    <a href="TODO" class="btn-primary">Get a Quote</a>
+                    <a href="TODO" class="btn-secondary">Call Now</a>
+                </div>
+            </div>
+            <div
+                class="relative -mr-[200px] flex-1 grid grid-cols-3 grid-rows-6 gap-8"
+            >
+                <Image
+                    src={tomBouchImage01}
+                    alt="Photo of Tom Bouch"
+                    class="row-start-3 row-span-2 rounded-lg shadow-md"
+                />
+                <Image
+                    src={carterMacdonaldImage01}
+                    alt="Photo of Tom Bouch"
+                    class="col-start-2 row-start-2 row-span-2 rounded-lg shadow-md"
+                />
+                <Image
+                    src={nathanHolliefieldImage01}
+                    alt="Photo of Tom Bouch"
+                    class="col-start-2 row-start-4 row-span-2 rounded-lg shadow-md"
+                />
+                <Image
+                    src={mikeTempleImage01}
+                    alt="Photo of Tom Bouch"
+                    class="col-start-3 row-start-1 row-span-2 rounded-lg shadow-md opacity-50"
+                />
+                <Image
+                    src={wadeHooverImage01}
+                    alt="Photo of Tom Bouch"
+                    class="col-start-3 row-start-3 row-span-2 rounded-lg shadow-md opacity-75"
+                />
+            </div>
+        </div>
+        <Image
+            src={backgroundHexigonsImage01}
+            alt=""
+            class="absolute inset-0 -z-10 opacity-[2%] -left-[500px] -top-[300px]"
+        />
+    </section>
