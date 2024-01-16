@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import TeamMemberCard from "../components/TeamMemberCard.astro";
 import team from "../data/team.js";
 ---
 
@@ -17,30 +17,7 @@ import team from "../data/team.js";
                     .filter((person) => person.image)
                     .map(
                         (person) =>
-                            person.image && (
-                                <div class="relative rounded-xl overflow-clip shadow-lg">
-                                    <Image
-                                        src={person.image}
-                                        alt={person.title}
-                                        class="aspect-[3/4] object-cover object-top rounded-xl"
-                                    />
-                                    <div class="absolute h-60 z-10 left-0 right-0 bottom-0 flex flex-col-reverse opacity-95">
-                                        <div class="h-24 bg-orange-500" />
-                                        <div class="h-48 bg-gradient-to-t from-orange-500 to-transparent" />
-                                    </div>
-                                    <div class="absolute z-20 p-8 md:px-6 left-0 right-0 bottom-0 text-white">
-                                        <p class="text-2xl font-bold">
-                                            {person.name}
-                                        </p>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipiscing elit. Sed
-                                            maximus eros a mauris euismod, ut
-                                            mollis ante lobortis.
-                                        </p>
-                                    </div>
-                                </div>
-                            ),
+                            person.image && <TeamMemberCard {...person} />,
                     )
             }
         </div>
