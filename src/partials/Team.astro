@@ -15,9 +15,9 @@ import team from "../data/team.js";
             {
                 team
                     .filter((person) => person.image)
-                    .map((person) => (
-                        <div>
-                            {person.image && (
+                    .map(
+                        (person) =>
+                            person.image && (
                                 <div class="relative rounded-xl overflow-clip shadow-lg">
                                     <Image
                                         src={person.image}
@@ -40,9 +40,8 @@ import team from "../data/team.js";
                                         </p>
                                     </div>
                                 </div>
-                            )}
-                        </div>
-                    ))
+                            ),
+                    )
             }
         </div>
     </div>
