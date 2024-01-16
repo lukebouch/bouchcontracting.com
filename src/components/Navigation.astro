@@ -29,37 +29,112 @@ const items = [
 ---
 
 <header>
-    <div
-        class="container-section py-5 flex gap-8 justify-between items-center bg-white bg-opacity-90"
-    >
-        <a href="/" class="flex-shrink-0">
-            <Image
-                src={logoImage}
-                alt="Bouch Contracting logo"
-                class="h-20 w-auto"
-            />
-        </a>
-        <nav class="flex-0">
-            <ul class="flex gap-6 md:gap-8 lg:gap-10">
-                {
-                    items.map((item) => (
-                        <li>
-                            <a
-                                href={item.url}
-                                class:list={[
-                                    "text-lg text-gray-800 hover:text-gray-900 pb-1",
-                                    {
-                                        "border-b-2 border-orange":
-                                            currentUrl.pathname == item.url,
-                                    },
-                                ]}
-                            >
-                                {item.name}
-                            </a>
-                        </li>
-                    ))
-                }
-            </ul>
-        </nav>
+    <div class="container-section py-5">
+        <!-- Desktop Navigation -->
+        <div
+            class="hidden lg:flex gap-8 justify-between items-center bg-white bg-opacity-90"
+        >
+            <a href="/" class="flex-shrink-0">
+                <Image
+                    src={logoImage}
+                    alt="Bouch Contracting logo"
+                    class="h-20 w-auto"
+                />
+            </a>
+            <nav class="flex-0">
+                <ul class="flex gap-6 md:gap-8 lg:gap-10">
+                    {
+                        items.map((item) => (
+                            <li>
+                                <a
+                                    href={item.url}
+                                    class:list={[
+                                        "text-lg text-gray-800 hover:text-gray-900 pb-1",
+                                        {
+                                            "border-b-2 border-orange":
+                                                currentUrl.pathname == item.url,
+                                        },
+                                    ]}
+                                >
+                                    {item.name}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </nav>
+        </div>
+        <!-- Mobile Navigation -->
+        <div class="container-section py-3" x-data="{ open: false }">
+            <div class="flex lg:hidden gap-8 justify-between items-center">
+                <a href="/" class="flex-shrink-0">
+                    <Image
+                        src={logoImage}
+                        alt="Bouch Contracting logo"
+                        class="h-20 w-auto"
+                    />
+                </a>
+                <button class="text-xl" @click="open = true"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div
+                class="absolute top-0 right-0 bottom-0 w-80 bg-gray-800 text-white p-6"
+                x-show="open"
+            >
+                <button @click="open = false" class="absolute top-6 right-7">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18 18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="space-y-5">
+                        {
+                            items.map((item) => (
+                                <li>
+                                    <a
+                                        href={item.url}
+                                        class:list={[
+                                            "text-2xl",
+                                            {
+                                                "border-b-2 border-white":
+                                                    currentUrl.pathname ==
+                                                    item.url,
+                                            },
+                                        ]}
+                                    >
+                                        {item.name}
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
 </header>
