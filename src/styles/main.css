@@ -6,9 +6,24 @@
     display: none !important;
 }
 
-@layer component {
+@layer components {
     .container-section {
         @apply container mx-auto px-4 md:px-6 lg:px-8;
+    }
+
+    [class^="btn"] {
+        @apply inline-block rounded-md px-7 py-3 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+    }
+
+    .btn-primary {
+        @apply bg-orange-600 hover:bg-orange-700 focus-visible:outline-orange-600 text-white;
+    }
+
+    .btn-secondary {
+        @apply text-gray-700 bg-gray-50 hover:bg-gray-100 focus-visible:outline-gray-600 border border-gray-300;
+    }
+    [class^="btn"] + [class^="btn"] {
+        @apply ml-5;
     }
 }
 
