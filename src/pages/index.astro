@@ -1,5 +1,33 @@
 ---
+import { Image } from "astro:assets";
 import Main from "../layouts/Main.astro";
+
+import backgroundHexigonsImage01 from "../assets/background-hexigons-01.svg";
 ---
 
-<Main title="Bouch Contracting" />
+<Main title="Bouch Contracting">
+    <section class="h-screen relative">
+        <div class="container-section py-24">
+            <div class="w-2/3">
+                <h1 class="h1">
+                    Your Trusted Partner for<br />
+                     Home Improvement and Remodeling
+                </h1>
+                <p
+                    class="mt-8 text-gray-600 text-2xl max-w-prose leading-[1.7]"
+                >
+                    We are dedicated to turning your home improvement dreams
+                    into reality. With a passionate team of skilled
+                    professionals, we take pride in delivering top-notch
+                    remodeling and renovation services that enhance the beauty,
+                    functionality, and value of your home.
+                </p>
+            </div>
+        </div>
+        <Image
+            src={backgroundHexigonsImage01}
+            alt=""
+            class="absolute inset-0 -z-10"
+        />
+    </section>
+</Main>
