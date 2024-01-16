@@ -1,0 +1,75 @@
+---
+
+---
+
+<form method="POST" name="contact" data-netlify="true">
+    <div class="mx-auto max-w-xl">
+        <div class="grid grid-cols-1 gap-6">
+            <div>
+                <label
+                    for="name"
+                    class="block text-sm font-semibold leading-6 text-gray-900"
+                    >Name</label
+                >
+                <div class="mt-2.5">
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        autocomplete="name"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                    />
+                </div>
+            </div>
+            <div>
+                <label
+                    for="email"
+                    class="block text-sm font-semibold leading-6 text-gray-900"
+                    >Email</label
+                >
+                <div class="mt-2.5">
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                    />
+                </div>
+            </div>
+            <div>
+                <label
+                    for="phone-number"
+                    class="block text-sm font-semibold leading-6 text-gray-900"
+                    >Phone number</label
+                >
+                <div class="mt-2.5">
+                    <input
+                        type="tel"
+                        name="phone-number"
+                        autocomplete="tel"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                    />
+                </div>
+            </div>
+            <div>
+                <label
+                    for="message"
+                    class="block text-sm font-semibold leading-6 text-gray-900"
+                    >Message</label
+                >
+                <div class="mt-2.5">
+                    <textarea
+                        name="message"
+                        required
+                        rows="4"
+                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-600 sm:text-sm sm:leading-6"
+                    ></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8">
+            <button type="submit" class="btn-primary">Send message</button>
+        </div>
+    </div>
+</form>

@@ -4,10 +4,21 @@ import Main from "../layouts/Main.astro";
 import Hero from "../partials/Hero.astro";
 import Review from "../partials/Review.astro";
 import Team from "../partials/Team.astro";
+import ContactForm from "../components/ContactForm.astro";
 ---
 
 <Main title="Bouch Contracting">
     <Hero />
     <Review />
     <Team />
+    <section class="container-section py-10 md:py-16 lg:py-24 xl:py-32">
+        <h2 class="h2 text-center">Contact Us</h2>
+        <p class="mt-4 text-center max-w-prose mx-auto">
+            Ready to start your home improvement journey? Contact us today!
+            Let's turn your house into the home of your dreams.
+        </p>
+        <div class="mt-10">
+            <ContactForm />
+        </div>
+    </section>
 </Main>
