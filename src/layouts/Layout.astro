@@ -1,12 +1,10 @@
 ---
-import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
 import "../styles/main.css";
 
-const { title, navbar } = Astro.props;
+const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="h-full">
     <head>
         <meta charset="UTF-8" />
@@ -15,22 +13,12 @@ const { title, navbar } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
 
-        <!-- Fathom Analytics -->
-        <script
-            src="https://cdn.usefathom.com/script.js"
-            data-site="EGHXRYDK"
-            defer
-        ></script>
-
         <script src="https://tinylytics.app/embed/z29QSfb-7vxzUBk8xXFY.js" defer
         ></script>
     </head>
     <body class="h-full">
-        {navbar && <Navbar client:load />}
         <main>
             <slot />
         </main>
-
-        <Footer />
     </body>
 </html>

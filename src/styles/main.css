@@ -7,7 +7,7 @@
 }
 
 @layer component {
-    .container {
+    .container-section {
         @apply max-w-5xl mx-auto;
     }
 }
