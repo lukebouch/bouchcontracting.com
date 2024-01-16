@@ -30,14 +30,16 @@ const items = [
 
 <header>
     <div
-        class="container-section py-5 flex justify-between items-center bg-white bg-opacity-90"
+        class="container-section py-5 flex gap-8 justify-between items-center bg-white bg-opacity-90"
     >
-        <Image
-            src={logoImage}
-            alt="Bouch Contracting logo"
-            class="h-20 w-auto"
-        />
-        <nav>
+        <a href="/" class="flex-shrink-0">
+            <Image
+                src={logoImage}
+                alt="Bouch Contracting logo"
+                class="h-20 w-auto"
+            />
+        </a>
+        <nav class="flex-1">
             <ul class="flex gap-6 md:gap-8 lg:gap-10">
                 {
                     items.map((item) => (
