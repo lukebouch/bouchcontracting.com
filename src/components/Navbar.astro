@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+import logoImage from "../assets/logos/bouch-contracting-logo.svg";
+
+const currentUrl = Astro.url;
+
+const items = [
+    {
+        name: "Home",
+        url: "/",
+    },
+    {
+        name: "Services",
+        url: "/services",
+    },
+    {
+        name: "Portfolio",
+        url: "/portfolio",
+    },
+    {
+        name: "About",
+        url: "/about",
+    },
+    {
+        name: "Contact",
+        url: "/contact",
+    },
+];
+---
+
+<header>
+    <div
+        class="container-section py-5 flex justify-between items-center bg-white bg-opacity-90"
+    >
+        <Image
+            src={logoImage}
+            alt="Bouch Contracting logo"
+            class="h-20 w-auto"
+        />
+        <nav>
+            <ul class="flex gap-6 md:gap-8 lg:gap-10">
+                {
+                    items.map((item) => (
+                        <li>
+                            <a
+                                href={item.url}
+                                class:list={[
+                                    "text-lg text-gray-800 hover:text-gray-900 pb-1",
+                                    {
+                                        "border-b-2 border-orange":
+                                            currentUrl.pathname == item.url,
+                                    },
+                                ]}
+                            >
+                                {item.name}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
+    </div>
+</header>

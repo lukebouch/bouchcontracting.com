@@ -1,6 +1,8 @@
 ---
 import "../styles/main.css";
 
+import Navbar from "../components/Navbar.astro";
+
 const { title } = Astro.props;
 ---
 
@@ -17,6 +19,7 @@ const { title } = Astro.props;
         ></script>
     </head>
     <body class="h-full">
+        <Navbar />
         <main>
             <slot />
         </main>
