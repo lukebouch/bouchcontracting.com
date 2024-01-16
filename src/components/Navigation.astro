@@ -65,7 +65,7 @@ const items = [
             </nav>
         </div>
         <!-- Mobile Navigation -->
-        <div class="container-section py-3" x-data="{ open: false }">
+        <div class="container-section py-2" x-data="{ open: false }">
             <div class="flex lg:hidden gap-8 justify-between items-center">
                 <a href="/" class="flex-shrink-0">
                     <Image
@@ -81,7 +81,7 @@ const items = [
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6"
+                        class="w-8 h-8"
                     >
                         <path
                             stroke-linecap="round"
@@ -93,18 +93,18 @@ const items = [
             </div>
 
             <div
-                class="absolute top-0 right-0 bottom-0 w-80 bg-gray-800 text-white p-6"
+                class="absolute top-0 right-0 bottom-0 w-80 bg-gray-800 text-white p-10"
                 x-show="open"
                 x-cloak
             >
-                <button @click="open = false" class="absolute top-6 right-7">
+                <button @click="open = false" class="absolute top-10 right-10">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6"
+                        class="w-8 h-8"
                     >
                         <path
                             stroke-linecap="round"
