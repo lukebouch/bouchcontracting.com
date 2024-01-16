@@ -1,65 +1,43 @@
+import tomBouchImage01 from "../assets/images/people/tom-bouch-01.jpg";
+import carterMacdonaldImage01 from "../assets/images/people/carter-macdonald-01.jpg";
+import mikeTempleImage01 from "../assets/images/people/mike-temple-01.jpg";
+import nathanHollifieldImage01 from "../assets/images/people/nathan-hollifield-01.jpg";
+import wadeHooverImage01 from "../assets/images/people/wade-hoover-01.jpg";
+
 export default [
     {
         name: "Tom Bouch",
         title: "Owner",
-        images: {
-            small: "https://static.bouchcontracting.com/team/tom-bouch-sm.jpg",
-            medium: "https://static.bouchcontracting.com/team/tom-bouch-md.jpg",
-            large: "https://static.bouchcontracting.com/team/tom-bouch-lg.jpg",
-        },
+        image: tomBouchImage01,
     },
     {
         name: "Carson Bouch",
         title: "",
-        images: {
-            small: "https://static.bouchcontracting.com/team/carson-bouch-sm.jpg",
-            medium: "https://static.bouchcontracting.com/team/carson-bouch-md.jpg",
-            large: "https://static.bouchcontracting.com/team/carson-bouch-lg.jpg",
-        },
+        image: null,
     },
     {
         name: "Carter MacDonald",
         title: "",
-        images: {
-            small: "https://static.bouchcontracting.com/team/carter-macdonald-sm.jpg",
-            medium: "https://static.bouchcontracting.com/team/carter-macdonald-md.jpg",
-            large: "https://static.bouchcontracting.com/team/carter-macdonald-lg.jpg",
-        },
+        image: carterMacdonaldImage01,
     },
     {
         name: "Mike Temple",
         title: "Project Manager",
-        images: {
-            small: "https://static.bouchcontracting.com/team/mike-temple-sm.jpg",
-            medium: "https://static.bouchcontracting.com/team/mike-temple-md.jpg",
-            large: "https://static.bouchcontracting.com/team/mike-temple-lg.jpg",
-        },
+        image: mikeTempleImage01,
     },
     {
         name: "Nathan Hollifield",
         title: "",
-        images: {
-            small: "https://static.bouchcontracting.com/team/nathan-hollifield-sm.jpg",
-            medium: "https://static.bouchcontracting.com/team/nathan-hollifield-md.jpg",
-            large: "https://static.bouchcontracting.com/team/nathan-hollifield-lg.jpg",
-        },
+        image: nathanHollifieldImage01,
     },
     {
         name: "Wade Hoover",
         title: "",
-        images: {
-            small: "https://static.bouchcontracting.com/team/wade-hoover-sm.jpg",
-            medium: "https://static.bouchcontracting.com/team/wade-hoover-md.jpg",
-            large: "https://static.bouchcontracting.com/team/wade-hoover-lg.jpg",
-        },
+        image: wadeHooverImage01,
     },
     {
         name: "Charlie Benz",
         title: "",
-        images: {
-            small: "https://static.bouchcontracting.com/team/charlie-benz-sm.jpg",
-            medium: "https://static.bouchcontracting.com/team/charlie-benz-md.jpg",
-            large: "https://static.bouchcontracting.com/team/charlie-benz-lg.jpg",
-        },
+        image: null,
     },
 ];
