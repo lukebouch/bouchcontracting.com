@@ -2,16 +2,18 @@
 import { Image } from "astro:assets";
 import Main from "../layouts/Main.astro";
 
+import kellerWilliamsLogoImage01 from "../assets/logos/keller-williams.png";
 import backgroundHexigonsImage01 from "../assets/background-hexigons-01.svg";
 import tomBouchImage01 from "../assets/images/people/tom-bouch-01.jpg";
 import nathanHolliefieldImage01 from "../assets/images/people/nathan-holliefield-01.jpg";
 import carterMacdonaldImage01 from "../assets/images/people/carter-macdonald-01.jpg";
 import mikeTempleImage01 from "../assets/images/people/mike-temple-01.jpg";
 import wadeHooverImage01 from "../assets/images/people/wade-hoover-01.jpg";
+import katiePearlImage from "../assets/images/people/katie-pearl.jpg";
 ---
 
 <Main title="Bouch Contracting">
-    <section class="h-[80vh] relative">
+    <section class="relative">
         <div class="container-section py-12 w-full flex gap-20">
             <div class="w-3/5 flex-0 py-60">
                 <h1 class="h1">
@@ -67,5 +69,27 @@ import wadeHooverImage01 from "../assets/images/people/wade-hoover-01.jpg";
             alt=""
             class="absolute inset-0 -z-10 opacity-[2%] -left-[500px] -top-[300px]"
         />
+    </section>
+    <section class="container-section py-20">
+        <Image
+            src={kellerWilliamsLogoImage01}
+            alt="Keller Williams Logo"
+            class="h-16 w-auto object-contain mx-auto"
+        />
+        <p
+            class="mt-8 max-w-prose text-center mx-auto text-3xl leading-[1.6] text-gray-800"
+        >
+            While I refer clients to him consistently, I have also used him for
+            many projects at my personal home over the years. My husband and I
+            whole heartily recommend Tom and his team for your home needs.
+        </p>
+        <Image
+            src={katiePearlImage}
+            alt="Katie Pearl"
+            class="mx-auto mt-8 h-20 w-20 rounded-full"
+        />
+        <p class="mt-3 text-center mx-auto text-xl font-medium text-gray-800">
+            Katie Pearl
+        </p>
     </section>
 </Main>
