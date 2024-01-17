@@ -4,28 +4,7 @@ import logoImage from "../assets/logos/bouch-contracting-logo.svg";
 
 const currentUrl = Astro.url;
 
-const items = [
-    {
-        name: "Home",
-        url: "/",
-    },
-    {
-        name: "Services",
-        url: "/services",
-    },
-    {
-        name: "Portfolio",
-        url: "/portfolio",
-    },
-    {
-        name: "About",
-        url: "/about",
-    },
-    {
-        name: "Contact",
-        url: "/contact",
-    },
-];
+const items = [];
 ---
 
 <header class="z-50 bg-white bg-opacity-90">
@@ -72,22 +51,26 @@ const items = [
                         class="h-20 w-auto"
                     />
                 </a>
-                <button class="text-xl" @click="open = true"
-                    ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-8 h-8"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                        ></path>
-                    </svg>
-                </button>
+                {
+                    items.length > 0 && (
+                        <button class="text-xl" @click="open = true">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-8 h-8"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                />
+                            </svg>
+                        </button>
+                    )
+                }
             </div>
 
             <div
