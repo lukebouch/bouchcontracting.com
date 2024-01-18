@@ -62,7 +62,11 @@ const items = [
                 </a>
                 {
                     items.length > 0 && (
-                        <button class="text-xl" @click="open = true">
+                        <button
+                            class="text-xl"
+                            @click="open = true"
+                            aria-label="open menu"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -87,7 +91,11 @@ const items = [
                 x-show="open"
                 x-cloak
             >
-                <button @click="open = false" class="absolute top-10 right-10">
+                <button
+                    @click="open = false"
+                    aria-label="close menu"
+                    class="absolute top-10 right-10"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
