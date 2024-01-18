@@ -9,6 +9,7 @@ export default [
         name: "Tom Bouch",
         title: "Owner",
         image: tomBouchImage01,
+        bio: "He enjoys working with customers and riding motorcycles.",
     },
     {
         name: "Carson Bouch",
@@ -19,21 +20,25 @@ export default [
         name: "Carter MacDonald",
         title: "",
         image: carterMacdonaldImage01,
+        bio: "His hobbies are hiking, photography, and writing and recording music."
     },
     {
         name: "Mike Temple",
         title: "Project Manager",
         image: mikeTempleImage01,
+        bio: "He enjoys spending time with his family, serving at church, or going off in the woods hunting."
     },
     {
         name: "Nathan Hollifield",
         title: "",
         image: nathanHollifieldImage01,
+        bio: "He keeps the job site light-hearted and fun with his sense of humor and friendly personality."
     },
     {
         name: "Wade Hoover",
         title: "",
         image: wadeHooverImage01,
+        bio: "He has a huge pasion for evangelism and you'll often find him sharing the gospel."
     },
     {
         name: "Charlie Benz",
