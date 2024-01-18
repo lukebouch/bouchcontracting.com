@@ -3,7 +3,9 @@ import { Image } from "astro:assets";
 import Main from "../layouts/Main.astro";
 
 import backgroundHexigonsImage02 from "../assets/background-hexigons-02.svg";
-import image from "../assets/images/portfolio/01.jpg";
+import portfolioImage01 from "../assets/images/portfolio/01.jpg";
+import portfolioImage02 from "../assets/images/portfolio/02.jpg";
+import portfolioImage03 from "../assets/images/portfolio/03.jpg";
 ---
 
 <Main>
@@ -25,65 +27,68 @@ import image from "../assets/images/portfolio/01.jpg";
         <div class="container-section grid grid-cols-5 grid-rows-6 gap-8">
             <Image
                 class="row-start-2 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-start-1 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage02}
                 alt=""
             />
             <Image
                 class="row-start-2 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage03}
                 alt=""
             />
             <Image
                 class="row-start-1 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-start-2 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
             <Image
                 class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                src={image}
+                src={portfolioImage01}
                 alt=""
             />
         </div>
-        <div class="absolute -z-10 inset-0 my-16 bg-orange"></div>
+        <div class="absolute inset-0 my-24">
+            <div class="absolute -z-10 inset-0 opacity-5 boxes"></div>
+            <div class="absolute -z-20 inset-0 bg-orange"></div>
+        </div>
     </section>
 </Main>
