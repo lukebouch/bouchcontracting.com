@@ -11,6 +11,7 @@ const { name, title, bio, image } = Astro.props;
         class="aspect-[3/4] object-cover object-top rounded-xl"
         widths={[350, 420, 440, 550, 640, image.width]}
         sizes="(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw"
+        quality="mid"
     />
     <div
         class="absolute h-60 z-10 left-0 right-0 bottom-0 flex flex-col-reverse opacity-95"
