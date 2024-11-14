@@ -1,10 +1,10 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 
 const { name, title, bio, image } = Astro.props;
 ---
 
-<div class="relative rounded-xl overflow-clip shadow-lg">
+<div class="relative rounded-xl overflow-clip shadow-xl border">
     <Image
         src={image}
         alt={title}
@@ -14,13 +14,7 @@ const { name, title, bio, image } = Astro.props;
         quality="mid"
     />
     <div
-        class="absolute h-60 z-10 left-0 right-0 bottom-0 flex flex-col-reverse opacity-95"
-    >
-        <div class="h-24 bg-orange-500"></div>
-        <div class="h-48 bg-gradient-to-t from-orange-500 to-transparent"></div>
-    </div>
-    <div
-        class="absolute z-20 py-6 px-8 md:px-6 left-0 right-0 bottom-0 text-white"
+        class="absolute z-20 py-6 px-8 md:px-6 left-0 right-0 bottom-0 text-white bg-orange h-32"
     >
         <p class="text-2xl font-bold">
             {name}
