@@ -30,7 +30,9 @@ const items = [
                 />
             </a>
             <nav class="flex-0">
-                <ul class="flex gap-6 md:gap-8 lg:gap-10">
+                <ul
+                    class="flex items-center gap-6 md:gap-8 lg:gap-10"
+                >
                     {
                         items.map((item) => (
                             <li>
@@ -50,6 +52,9 @@ const items = [
                             </li>
                         ))
                     }
+                    <a class="btn-primary mb-1" href="/TODO"
+                        >Get a Quote</a
+                    >
                 </ul>
             </nav>
         </div>
@@ -134,6 +139,9 @@ const items = [
                                 </li>
                             ))
                         }
+                        <a class="btn-primary mb-1" href="/TODO"
+                            >Get a Quote</a
+                        >
                     </ul>
                 </nav>
             </div>
