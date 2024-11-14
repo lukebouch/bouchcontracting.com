@@ -1,23 +1,37 @@
 ---
-import { Image } from "astro:assets";
-import Main from "../layouts/Main.astro";
+import { Image } from 'astro:assets';
+import Main from '../layouts/Main.astro';
 
-import backgroundHexigonsImage02 from "../assets/background-hexigons-02.svg";
-import portfolioImage01 from "../assets/images/portfolio/01.jpg";
-import portfolioImage02 from "../assets/images/portfolio/02.jpg";
-import portfolioImage03 from "../assets/images/portfolio/03.jpg";
-import Contact from "../partials/Contact.astro";
+import backgroundHexigonsImage02 from '../assets/background-hexigons-02.svg';
+import portfolioImage01 from '../assets/images/portfolio/01.jpg';
+import portfolioImage02 from '../assets/images/portfolio/02.jpg';
+import portfolioImage03 from '../assets/images/portfolio/03.jpg';
+import portfolioImage04 from '../assets/images/portfolio/04.jpg';
+import portfolioImage05 from '../assets/images/portfolio/05.jpg';
+import portfolioImage06 from '../assets/images/portfolio/06.jpg';
+import portfolioImage07 from '../assets/images/portfolio/07.jpg';
+import portfolioImage08 from '../assets/images/portfolio/08.jpg';
+import portfolioImage09 from '../assets/images/portfolio/09.jpg';
+import portfolioImage10 from '../assets/images/portfolio/10.jpg';
+import portfolioImage11 from '../assets/images/portfolio/11.jpg';
+import portfolioImage12 from '../assets/images/portfolio/12.jpg';
+import portfolioImage13 from '../assets/images/portfolio/13.jpg';
+import portfolioImage14 from '../assets/images/portfolio/14.jpg';
+import portfolioImage15 from '../assets/images/portfolio/15.jpg';
+import portfolioImage18 from '../assets/images/portfolio/18.jpg';
+import Contact from '../partials/Contact.astro';
 ---
 
 <Main>
-    <section class="relative lg:h-[80vh] pb-32">
+    <section class="relative lg:h-[60vh] pb-32">
         <div
             class="container-section px py-24 h-full grid place-content-center"
         >
             <h1 class="h1 text-center">Our Portfolio</h1>
             <p class="mt-3 text-center mx-auto paragraph">
-                Every project is a journey from vision to reality. Our portfolio
-                is a testament to our dedication and craftsmanship.
+                Every project is a journey from vision to reality. Our
+                portfolio is a testament to our dedication and
+                craftsmanship.
             </p>
         </div>
         <Image
@@ -30,66 +44,66 @@ import Contact from "../partials/Contact.astro";
         <div class="container-section">
             <div
                 class="grid gap-2 sm:gap-3 md:gap-5 lg:gap-8 xl:gap-10"
-                style="grid-template-columns: 5fr 6fr 6fr 6fr 5fr;"
+                style="grid-template-columns: 4fr 5fr 6fr 5fr 4fr;"
             >
                 <Image
-                    class="row-start-2 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
+                    class="row-start-2 row-span-2 aspect-square object-cover rounded-lg shadow-md"
                     src={portfolioImage01}
                     alt=""
                 />
                 <Image
-                    class="row-start-1 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
+                    class="row-start-1 row-span-2 aspect-square object-cover rounded-lg shadow-md"
                     src={portfolioImage02}
                     alt=""
                 />
                 <Image
-                    class="row-start-2 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
+                    class="row-start-2 row-span-2 aspect-square object-cover rounded-lg shadow-md"
                     src={portfolioImage03}
                     alt=""
                 />
                 <Image
-                    class="row-start-1 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-start-1 row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage04}
                     alt=""
                 />
                 <Image
-                    class="row-start-2 row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-start-2 row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage05}
                     alt=""
                 />
                 <Image
-                    class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage06}
                     alt=""
                 />
                 <Image
-                    class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage07}
                     alt=""
                 />
                 <Image
-                    class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage08}
                     alt=""
                 />
                 <Image
-                    class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage09}
                     alt=""
                 />
                 <Image
-                    class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage10}
                     alt=""
                 />
                 <Image
-                    class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage11}
                     alt=""
                 />
                 <Image
-                    class="row-span-2 aspect-[3/4] object-cover rounded-lg shadow-md"
-                    src={portfolioImage01}
+                    class="row-span-2 aspect-square object-cover rounded-lg shadow-md"
+                    src={portfolioImage12}
                     alt=""
                 />
             </div>
@@ -98,6 +112,9 @@ import Contact from "../partials/Contact.astro";
             <div class="absolute -z-10 inset-0 opacity-5 boxes"></div>
             <div class="absolute -z-20 inset-0 bg-orange"></div>
         </div>
+    </section>
+    <section>
+        <div class="container-section"></div>
     </section>
     <Contact />
 </Main>
