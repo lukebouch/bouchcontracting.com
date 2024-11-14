@@ -1,38 +1,38 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 
-import backgroundHexigonsImage01 from "../assets/background-hexigons-01.svg";
-import tomBouchImage01 from "../assets/images/people/tom-bouch-01.jpg";
-import nathanHollifieldImage01 from "../assets/images/people/nathan-hollifield-01.jpg";
-import carterMacdonaldImage01 from "../assets/images/people/carter-macdonald-01.jpg";
-import mikeTempleImage01 from "../assets/images/people/mike-temple-01.jpg";
-import wadeHooverImage01 from "../assets/images/people/wade-hoover-01.jpg";
+import backgroundHexigonsImage01 from '../assets/background-hexigons-01.svg';
+import tomBouchImage02 from '../assets/images/people/tom-bouch-02.jpg';
+import carsonBouch02 from '../assets/images/people/carson-bouch-02.jpg';
+import josephFeinauer02 from '../assets/images/people/joseph-feinauer-02.jpg';
+import mikeTempleImage02 from '../assets/images/people/mike-temple-02.jpg';
+import charlieBenzImage02 from '../assets/images/people/charlie-benz-02.jpg';
 
 const images = [
     {
-        image: tomBouchImage01,
-        alt: "Tom Bouch",
-        class: "row-start-3 row-span-2",
+        image: tomBouchImage02,
+        alt: 'Tom Bouch',
+        class: 'row-start-3 row-span-2',
     },
     {
-        image: carterMacdonaldImage01,
-        alt: "Carter MacDonald",
-        class: "col-start-2 row-start-2 row-span-2",
+        image: josephFeinauer02,
+        alt: 'Joseph Feinauer',
+        class: 'col-start-2 row-start-2 row-span-2',
     },
     {
-        image: nathanHollifieldImage01,
-        alt: "Nathan Hollifield",
-        class: "col-start-2 row-start-4 row-span-2",
+        image: carsonBouch02,
+        alt: 'Carson Bouch',
+        class: 'col-start-2 row-start-4 row-span-2',
     },
     {
-        image: mikeTempleImage01,
-        alt: "Mike Temple",
-        class: "col-start-3 row-start-1 row-span-2 lg:opacity-50",
+        image: mikeTempleImage02,
+        alt: 'Mike Temple',
+        class: 'col-start-3 row-start-1 row-span-2 lg:opacity-50',
     },
     {
-        image: wadeHooverImage01,
-        alt: "Wade Hoover",
-        class: "col-start-3 row-start-3 row-span-2 lg:opacity-75",
+        image: charlieBenzImage02,
+        alt: 'Charlie Benz',
+        class: 'col-start-3 row-start-3 row-span-2 lg:opacity-75',
     },
 ];
 ---
@@ -48,15 +48,18 @@ const images = [
                     Home Improvement and Remodeling
                 </h1>
                 <p class="mt-4 sm:mt-6 paragraph">
-                    We are dedicated to turning your home improvement dreams
-                    into reality. With a passionate team of skilled
-                    professionals, we take pride in delivering top-notch
-                    remodeling and renovation services that enhance the beauty,
-                    functionality, and value of your home.
+                    We are dedicated to turning your home improvement
+                    dreams into reality. With a passionate team of
+                    skilled professionals, we take pride in delivering
+                    top-notch remodeling and renovation services that
+                    enhance the beauty, functionality, and value of
+                    your home.
                 </p>
                 <div class="mt-6">
                     <a href="TODO" class="btn-primary">Get a Quote</a>
-                    <a href="tel:4349222500" class="btn-secondary">Call Now</a>
+                    <a href="tel:4349222500" class="btn-secondary"
+                        >Call Now</a
+                    >
                 </div>
             </div>
             <div
@@ -67,7 +70,10 @@ const images = [
                         <Image
                             src={image.image}
                             alt={image.alt}
-                            class:list={["rounded-lg shadow-md", image.class]}
+                            class:list={[
+                                'rounded-lg shadow-md',
+                                image.class,
+                            ]}
                             widths={[
                                 190,
                                 230,
