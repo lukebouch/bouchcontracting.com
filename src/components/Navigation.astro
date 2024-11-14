@@ -1,17 +1,17 @@
 ---
-import { Image } from "astro:assets";
-import logoImage from "../assets/logos/bouch-contracting-logo.svg";
+import { Image } from 'astro:assets';
+import logoImage from '../assets/logos/bc-logo-horizontal.svg';
 
 const currentUrl = Astro.url;
 
 const items = [
     {
-        name: "Home",
-        url: "/",
+        name: 'Home',
+        url: '/',
     },
     {
-        name: "Portfolio",
-        url: "/portfolio",
+        name: 'Portfolio',
+        url: '/portfolio',
     },
 ];
 ---
@@ -19,7 +19,9 @@ const items = [
 <header class="z-50 bg-white bg-opacity-90">
     <div class="container-section py-3">
         <!-- Desktop Navigation -->
-        <div class="hidden lg:flex gap-8 justify-between items-center">
+        <div
+            class="hidden lg:flex gap-8 justify-between items-center"
+        >
             <a href="/" class="flex-shrink-0">
                 <Image
                     src={logoImage}
@@ -35,10 +37,11 @@ const items = [
                                 <a
                                     href={item.url}
                                     class:list={[
-                                        "text-lg text-gray-800 hover:text-gray-900 pb-1",
+                                        'text-lg text-gray-800 hover:text-gray-900 pb-1',
                                         {
-                                            "border-b-2 border-orange":
-                                                currentUrl.pathname == item.url,
+                                            'border-b-2 border-orange':
+                                                currentUrl.pathname ==
+                                                item.url,
                                         },
                                     ]}
                                 >
@@ -118,9 +121,9 @@ const items = [
                                     <a
                                         href={item.url}
                                         class:list={[
-                                            "text-2xl",
+                                            'text-2xl',
                                             {
-                                                "border-b-2 border-white":
+                                                'border-b-2 border-white':
                                                     currentUrl.pathname ==
                                                     item.url,
                                             },
