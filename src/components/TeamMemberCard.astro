@@ -4,21 +4,21 @@ import { Image } from 'astro:assets';
 const { name, title, bio, image } = Astro.props;
 ---
 
-<div class="relative rounded-xl overflow-clip shadow-xl border">
-    <Image
-        src={image}
-        alt={title}
-        class="aspect-[3/4] object-cover object-top rounded-xl"
-        widths={[350, 420, 440, 550, 640, image.width]}
-        sizes="(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw"
-        quality="mid"
-    />
-    <div
-        class="absolute z-20 py-6 px-8 md:px-6 left-0 right-0 bottom-0 text-white bg-orange h-32"
-    >
+<div class="flex gap-8 w-full border shadow-xl rounded-3xl mt-40">
+    <div class="flex-1">
+        <Image
+            src={image}
+            alt={title}
+            class="aspect-[3/4] object-cover object-top rounded-xl -px-20 -mt-40"
+            widths={[350, 420, 440, 550, 640, image.width]}
+            sizes="(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw"
+            quality="mid"
+        />
+    </div>
+    <div class="flex-1 my-auto mr-10 py-5">
         <p class="text-2xl font-bold">
             {name}
         </p>
-        {bio && <p class="mt-1">{bio}</p>}
+        <p>{bio && <p class="mt-1">{bio}</p>}</p>
     </div>
 </div>
