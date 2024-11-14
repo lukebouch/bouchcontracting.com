@@ -5,6 +5,7 @@ import charlieBenzImage from "../assets/images/people/charlie-benz-01.png";
 import benBouchImage from "../assets/images/people/benjamin-bouch-01.png";
 import jorgeBeltranImage from "../assets/images/people/jorge-beltran-01.png";
 import brandonWilliamsImage from "../assets/images/people/brandon-williams-01.png";
+import josephFeinauerImage from "../assets/images/people/joseph-feinauer-01.png";
 
 export default [
     {
@@ -43,5 +44,10 @@ export default [
         name: "Brandon Williams",
         title: "",
         image: brandonWilliamsImage,
+    },
+    {
+        name: "Joseph Feinauer",
+        title: "",
+        image: josephFeinauerImage,
     },
 ];
