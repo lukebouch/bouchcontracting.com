@@ -1,11 +1,11 @@
-import tomBouchImage from "../assets/images/people/tom-bouch-01.png";
-import carsonBouchImage from "../assets/images/people/carson-bouch-01.png";
-import mikeTempleImage from "../assets/images/people/mike-temple-01.png";
-import charlieBenzImage from "../assets/images/people/charlie-benz-01.png";
-import benBouchImage from "../assets/images/people/benjamin-bouch-01.png";
-import jorgeBeltranImage from "../assets/images/people/jorge-beltran-01.png";
-import brandonWilliamsImage from "../assets/images/people/brandon-williams-01.png";
-import josephFeinauerImage from "../assets/images/people/joseph-feinauer-01.png";
+import tomBouchImage from "../assets/images/people/tom-bouch-profile.jpg";
+import carsonBouchImage from "../assets/images/people/carson-bouch-profile.jpg";
+import mikeTempleImage from "../assets/images/people/mike-temple-profile.jpg";
+import charlieBenzImage from "../assets/images/people/charlie-benz-profile.jpg";
+import benBouchImage from "../assets/images/people/benjamin-bouch-profile.jpg";
+import jorgeBeltranImage from "../assets/images/people/jorge-beltran-profile.jpg";
+import brandonWilliamsImage from "../assets/images/people/brandon-williams-profile.jpg";
+import josephFeinauerImage from "../assets/images/people/joseph-feinauer-profile.jpg";
 
 export default [
     {

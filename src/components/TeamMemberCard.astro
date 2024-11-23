@@ -4,18 +4,17 @@ import { Image } from 'astro:assets';
 const { name, title, bio, image } = Astro.props;
 ---
 
-<div class="flex gap-8 w-full border shadow-xl rounded-3xl mt-32">
-    <div class="flex-1">
-        <Image
-            src={image}
-            alt={title}
-            class="aspect-[3/4] object-cover object-top -mt-32"
-            widths={[350, 420, 440, 550, 640, image.width]}
-            sizes="(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw"
-            quality="mid"
-        />
-    </div>
-    <div class="flex-1 my-auto mr-10 py-5">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+    <Image
+        src={image}
+        alt={title}
+        class="aspect-square object-cover rounded-full shadow mx-auto w-64 md:w-full"
+        widths={[350, 420, 440, 550, 640, image.width]}
+        sizes="(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw"
+        quality="mid"
+    />
+
+    <div class="md:col-span-2 text-center md:text-left">
         <p class="text-2xl font-bold">
             {name}
         </p>
